@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cart-Data Contrivers</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+   <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+     
+      <div class = "container">
+       <div class= "navbar">
+           <div class ="logo">
+               <img src = "images/logo1.png" width= "180px"/>
+           </div>
+           <nav>
+               <ul id = "MenuItems">
+                   <li><a href = "https://Data-Contrivers.varsharskesnani.repl.co"> Home </a> </li>
+                   <li><a href = "https://data-contrivers.varsharskesnani.repl.co/products.html"> Products </a> </li>
+                   <!--<li><a href = ""> About Us </a> </li>
+                   <li><a href = "">Contacts </a></li>
+                   <li><a href = "">Account </a></li>-->
+               </ul>
+           </nav>
+           <img src = "images/cart.png" width = "30px" height="30px">
+           <img src = "images/menu.png" class= "menu-icon" onclick="menutoggle()">
+       </div>
+       
+        </div>
+        <div class="small-container cart-page">
+          <table>
+            <tr>
+             <th> Product </th>
+             <th> Quantity </th>
+             <th> SubTotal</th>
+              </tr>
+            <tr>
+              <td>
+                <div class="cart-info">
+                  <img src = "images/buy-1.jpg">
+                </div>
+                <div>
+                  <p> Tshirt </p>
+                  <small> Price: 500 rs. </small><br>
+                  <a href = ""> Remove </a>
+                  </div>
+
+              </td>
+              <td><input type = "number" value = "1"></td>
+              <td> 500 </td>
+              </tr>
+              <tr>
+              <td>
+                <div class="cart-info">
+                  <img src = "images/buy-2.jpg">
+                </div>
+                <div>
+                  <p> Shoes </p>
+                  <small> Price: 1000 rs. </small><br>
+                  <a href = ""> Remove </a>
+                  </div>
+
+              </td>
+              <td><input type = "number" value = "1"></td>
+              <td> 1000 </td>
+              </tr>
+              <tr>
+              <td>
+                <div class="cart-info">
+                  <img src = "images/buy-3.jpg">
+                </div>
+                <div>
+                  <p> Trouser Pants </p>
+                  <small> Price: 1500 rs. </small><br>
+                  <a href = ""> Remove </a>
+                  </div>
+
+              </td>
+              <td><input type = "number" value = "1"></td>
+              <td> 1500 </td>
+              </tr>
+              <tr>
+                <td> Total </td>
+                <td> <input type = "number" value = "3"></td>
+                <td> 3000 </td>
+              </tr>
+
+          </table>
+        </div>
+        
+
+
+        <!-- brands -->
+       <div class ="brands">
+       <div class = "small-container">
+           <div class = "row">
+               <div class = "col-1">
+                   <img src = "images/logo1.png">
+               </div>
+           </div>
+       </div>
+   </div>
+   <script>
+        var MenuItems = document.getElementById("MenuItems");
+       MenuItems.style.maxHeight = "0px";
+
+       function menutoggle(){
+           if(MenuItems.style.maxHeight == "0px"){
+               MenuItems.style.maxHeight = "200px";
+           }
+           else{
+               MenuItems.style.maxHeight = "0px";
+           }
+       }
+        </script>
+    </body>
+</html>
